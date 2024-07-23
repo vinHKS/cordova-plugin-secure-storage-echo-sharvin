@@ -40,32 +40,32 @@ public class SecureStorage extends CordovaPlugin {
 
     @Override
     public void onResume(boolean multitasking) {
-        if (secureDeviceContext != null) {
+        // if (secureDeviceContext != null) {
 
-            if (isDeviceSecure()) {
-                secureDeviceContext.success();
-            } else {
-                secureDeviceContext.error(MSG_DEVICE_NOT_SECURE);
-            }
-            secureDeviceContext = null;
-        }
+        //     if (isDeviceSecure()) {
+        //         secureDeviceContext.success();
+        //     } else {
+        //         secureDeviceContext.error(MSG_DEVICE_NOT_SECURE);
+        //     }
+        //     secureDeviceContext = null;
+        // }
 
-        if (unlockCredentialsContext != null) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                cordova.getThreadPool().execute(new Runnable() {
-                    public void run() {
-                        if (unlockCredentialsContext != null) {
-                            String alias = service2alias(INIT_SERVICE);
-                            if (rsa.userAuthenticationRequired(alias)) {
-                                unlockCredentialsContext.error("User not authenticated");
-                            }
-                            unlockCredentialsContext.success();
-                            unlockCredentialsContext = null;
-                        }
-                    }
-                });
-            }
-        }
+        // if (unlockCredentialsContext != null) {
+        //     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+        //         cordova.getThreadPool().execute(new Runnable() {
+        //             public void run() {
+        //                 if (unlockCredentialsContext != null) {
+        //                     String alias = service2alias(INIT_SERVICE);
+        //                     if (rsa.userAuthenticationRequired(alias)) {
+        //                         unlockCredentialsContext.error("User not authenticated");
+        //                     }
+        //                     unlockCredentialsContext.success();
+        //                     unlockCredentialsContext = null;
+        //                 }
+        //             }
+        //         });
+        //     }
+        // }
     }
 
     @Override
