@@ -1,32 +1,9 @@
 {
-  "name": "cordova-plugin-secure-storage-echo",
+  "name": "cordova-plugin-secure-storage-echo-sharvin",
   "version": "5.1.1",
   "description": "Secure storage plugin for iOS & Android",
-  "author": "Yiorgis Gozadinos <ggozad@crypho.com>",
-  "contributors": [
-    {
-      "name": "Demetris Manikas",
-      "email": "demetris.manikas@gmail.com"
-    },
-    {
-      "name": "Sergey Grebnov",
-      "email": "sergei.grebnov@gmail.com"
-    },
-    {
-      "name": "Ajay Ambre",
-      "email": "ajayambre88@gmail.com"
-    },
-    {
-      "name": "Maurys Brito",
-      "email": "mibrito@mibrito.com"
-    },
-    {
-      "name": "Aurelien RICHAUD",
-      "email": "aurelien.richaud@groupecen.com"
-    }
-  ],
   "cordova": {
-    "id": "cordova-plugin-secure-storage-echo",
+    "id": "cordova-plugin-secure-storage-echo-sharvin",
     "platforms": ["android", "ios", "wp8", "windows"]
   },
   "keywords": [
@@ -45,7 +22,7 @@
   "main": "www/securestorage.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mibrito707/cordova-plugin-secure-storage-echo.git"
+    "url": "git+https://github.com/vinHKS/cordova-plugin-secure-storage-echo-sharvin.git"
   },
   "scripts": {
     "eslint": "./node_modules/.bin/eslint www/securestorage.js tests/tests.js"
