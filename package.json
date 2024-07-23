@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-secure-storage-echo-sharvin",
-  "version": "5.1.1",
+  "version": "v0.0.1",
   "description": "Secure storage plugin for iOS & Android",
   "cordova": {
     "id": "cordova-plugin-secure-storage-echo-sharvin",
